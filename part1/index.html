@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coba</title>
+    <style>
+        p{
+            color: blue;
+        }
+        p::after{
+            content: "'";
+            color: red;
+            font-size: 22px;
+        }
+        p::before{
+            content: "'";
+            color: red;
+            font-size: 22px;
+        }
+        div.kotak{
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+        }
+        div.kotak::after{
+            content: '';
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+        div.kotak::before{
+            content: '';
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+        }
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="color: red; font-size: 12px;">saya belajar html 5 dan css </h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, vero!</p>
+    <button>simpan</button>
+    <div class="kotak">
+
+    </div>
+</body>
+</html>

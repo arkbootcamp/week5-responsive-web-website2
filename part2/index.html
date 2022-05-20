@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>selamanya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: "Inter", sans-serif;
+      }
+      body {
+        background-image: linear-gradient(#BCCFFF80 100%, white 0), url("./assets/images/background-image.jpg");
+        background-repeat: no-repeat;
+        /* background-color: blue; */
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        width: 100vw;
+        display: flex;
+        box-sizing: border-box;
+        /* align-items: center;
+        justify-content: center; */
+      }
+      .container {
+        /* width: 450px; */
+        width: 100%;
+        padding: 16px;
+        height: 350px;
+        /* background-color: lightcyan; */
+        margin: auto;
+        /* margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto; */
+        /* margin-left: auto;
+        margin-right: auto;
+        margin-top: 200px; */
+        /* position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%); */
+      }
+      .container h1 {
+        font-family: "Poppins", sans-serif;
+        font-size: 46px;
+        font-weight: 400;
+        text-align: center;
+        color: #355c80;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-style: italic;
+      }
+      .container h1 span{
+          font-weight: 500;
+      }
+      .container p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #0a0a0a;
+        text-align: center;
+      }
+      .form-wrapper{
+          width: 277px;
+            /* background-color: lightsalmon; */
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 24px;
+      }
+      .form-wrapper .btn{
+          width: 100%;
+          font-size: 14px;
+          border-radius: 8px;
+          padding: 10px 16px;
+          background-color: #355C80;
+          color: #fff;
+          border-width: 0;
+          cursor: pointer;
+      }
+      .form-wrapper .btn:hover{
+          background-color: #476988;
+      }
+      .form-wrapper input{
+          width: 100%;
+          box-sizing: border-box;
+          font-size: 14px;
+          padding: 10px 16px;
+          border-radius: 8px;
+          border-width: 0;
+          outline: none;
+          margin-bottom: 16px;
+      }
+      /* jika mengutamakan versi destopnya dulu */
+      /* versi destop */
+      @media (min-width: 576px) {
+          /* versi table */
+          .container{
+              background-color: red;
+              font-size: 64px;
+              width: 450px
+          }
+      }
+
+      @media (min-width: 768px) {
+          /* versi destop */
+          .container{
+              background-color: blue;
+              width: 450px
+          }
+      }
+
+
+      /* ----------------------- */
+      /* jika mengutamakan versi mobilenya dulu */
+
+      @media (max-width: 768px) {
+          /* versi table */
+          .container{
+              background-color: blue;
+              width: 450px
+          }
+      }
+      @media (max-width: 576px) {
+          /* versi mobile */
+          .container{
+              background-color: red;
+              font-size: 64px;
+              width: 450px
+          }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1><span>Sea</span>lamanya~</h1>
+      <p>
+        Mendengar gemuruh ombak, menyelam ke dasar laut, atau menikmati rasa
+        ikan segar di pinggir pantai? Ciptakan kenangan indah yang akan anda
+        kenang Sealamanya~
+      </p>
+      <div class="form-wrapper">
+          <input type="text" placeholder="Nomor telepon..">
+          <button class="btn">Mulai perjalanan anda</button>
+      </div>
+    </div>
+  </body>
+</html>

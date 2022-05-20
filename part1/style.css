@@ -1,0 +1,9 @@
+button{
+    background-color: red;
+    color: rgb(255,255,255);
+    transition: 1s;
+}
+button:hover{
+    background-color: pink;
+    color: black;
+}
